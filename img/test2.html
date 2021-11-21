@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<head>
+		<title> 윷 던지기 </title>
+	</head>
+	<style>
+		body{
+			background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png");
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		table{
+			width:60%;
+			height:100px;
+			margin:auto;
+			text-align:center;
+		}
+		#wrapper{
+			width:300px;
+			margin:auto;
+		}
+		#btn{
+			width:100px;
+			margin:auto;
+			display:block;
+		}
+	</style>
+	<script language="JavaScript">		
+		function btn_click() {
+			var temp=Math.floor(Math.random() * 7) + 1;
+			console.log(temp);
+			if(temp==1){
+					document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			}
+			else if(temp==2){
+				document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			}
+			else if(temp==3){
+				document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			}
+			else if(temp==4){
+				document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580";
+			}
+			else if(temp==5){
+				document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			}
+			else if(temp==6){
+				document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMjQ2/MDAxNjM3MTUzMjExNzU4.SW7P0dLE9TG6fFVUc6Y9T89p7iNSMzw9BrouvkHwq6Qg.-zS37pUCo9w6AW04cFPGSVEKBDLRG-s_z9SqVu0w-kgg.JPEG.oeseah12/3.JPG?type=w580";
+			document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580";
+			}
+			else{
+					document.getElementById("one").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc4/MDAxNjM3MTU0NTk5NzIw.uF60qAY1ggZn2wPnLrb6mwqi6EeQD8rhVu8NWK_M7Cwg.lW4VqbxAFsY289esvZTU6BNBozURCBI16zIBUqX3qzog.JPEG.oeseah12/4.jpg?type=w580";
+				document.getElementById("two").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc4/MDAxNjM3MTU0NTk5NzIw.uF60qAY1ggZn2wPnLrb6mwqi6EeQD8rhVu8NWK_M7Cwg.lW4VqbxAFsY289esvZTU6BNBozURCBI16zIBUqX3qzog.JPEG.oeseah12/4.jpg?type=w580";
+				document.getElementById("three").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc4/MDAxNjM3MTU0NTk5NzIw.uF60qAY1ggZn2wPnLrb6mwqi6EeQD8rhVu8NWK_M7Cwg.lW4VqbxAFsY289esvZTU6BNBozURCBI16zIBUqX3qzog.JPEG.oeseah12/4.jpg?type=w580";
+				document.getElementById("four").src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc4/MDAxNjM3MTU0NTk5NzIw.uF60qAY1ggZn2wPnLrb6mwqi6EeQD8rhVu8NWK_M7Cwg.lW4VqbxAFsY289esvZTU6BNBozURCBI16zIBUqX3qzog.JPEG.oeseah12/4.jpg?type=w580";
+			}
+		}
+	</script>
+	<body>
+		<table>
+			<tr>
+				<td>
+				<img id="one" alt="" src="https://postfiles.pstatic.net/MjAyMTExMTdfMjI1/MDAxNjM3MTUzMjExNzU1.qz_rmy2SSVdV3XTVSVt7XFBHccpOqX9Z6yCQSlyEz9cg.ZRO-V8-A8aaKYHhZ2yywCIxHuGLiMaY0aQbCW52JpDIg.JPEG.oeseah12/1.JPG?type=w580"/>
+				<img id="two" alt="" src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc0/MDAxNjM3MTUzMjExNzU4.Ji7rMxdQy2d6z6lIQVZGTxRghpuAIOZrrYum0uFtXv0g.exMEHanORH7hBJoNDWQrUipEGjxfaG9n4Ca8cL2b8nkg.JPEG.oeseah12/2.JPG?type=w580"/>
+				<img id="three" alt="" src="https://postfiles.pstatic.net/MjAyMTExMTdfMjQ2/MDAxNjM3MTUzMjExNzU4.SW7P0dLE9TG6fFVUc6Y9T89p7iNSMzw9BrouvkHwq6Qg.-zS37pUCo9w6AW04cFPGSVEKBDLRG-s_z9SqVu0w-kgg.JPEG.oeseah12/3.JPG?type=w580"/>
+				<img id="four" alt="" src="https://postfiles.pstatic.net/MjAyMTExMTdfMTc4/MDAxNjM3MTU0NTk5NzIw.uF60qAY1ggZn2wPnLrb6mwqi6EeQD8rhVu8NWK_M7Cwg.lW4VqbxAFsY289esvZTU6BNBozURCBI16zIBUqX3qzog.JPEG.oeseah12/4.jpg?type=w580"/>
+			</tr>
+		</table>
+		<div>
+			<button type="button" id="btn" onclick="btn_click();">완료</button>
+		</div>
+	</body>
+</html>
