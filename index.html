@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<head>
+		<title> 윷 던지기 </title>
+	</head>
+	<style>
+		body{
+			background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2048px-Solid_white.svg.png");
+			background-repeat: no-repeat;
+			background-size:cover;
+		}
+		table{
+			width:60%;
+			height:100px;
+			margin:auto;
+			text-align:center;
+		}
+		#wrapper{
+			width:300px;
+			margin:auto;
+		}
+		#btn{
+			width:100px;
+			margin:auto;
+			display:block;
+		}
+	</style>
+	<script language="JavaScript">	
+		function btn_click() {
+			var temp=Math.random() * 100;
+			console.log(temp);
+
+			alert("윷을 던졌습니다!");
+	
+			if(temp<2){
+				document.getElementById("one").src="./img/three.JPG";
+			document.getElementById("two").src="./img/two.JPG";
+			document.getElementById("three").src="./img/two.JPG";
+			document.getElementById("four").src="./img/two.JPG";	
+			}
+			else if(temp<5){
+				document.getElementById("one").src="./img/four.jpg";
+				document.getElementById("two").src="./img/four.jpg";
+				document.getElementById("three").src="./img/four.jpg";
+				document.getElementById("four").src="./img/four.jpg";
+			}
+			else if(temp<10){
+				document.getElementById("one").src="./img/two.JPG";
+			document.getElementById("two").src="./img/two.JPG";
+			document.getElementById("three").src="./img/two.JPG";
+			document.getElementById("four").src="./img/two.JPG";
+			}
+			else if(temp<17){
+				document.getElementById("one").src="./img/one.JPG";
+			document.getElementById("two").src="./img/one.JPG";
+			document.getElementById("three").src="./img/one.JPG";
+			document.getElementById("four").src="./img/one.JPG";
+			}
+			else if(temp<37){
+				document.getElementById("one").src="./img/one.JPG";
+			document.getElementById("two").src="./img/two.JPG";
+			document.getElementById("three").src="./img/two.JPG";
+			document.getElementById("four").src="./img/two.JPG";
+			}
+			else if(temp<67){
+				document.getElementById("one").src="./img/one.JPG";
+			document.getElementById("two").src="./img/one.JPG";
+			document.getElementById("three").src="./img/one.JPG";
+			document.getElementById("four").src="./img/two.JPG";
+			}
+			else{
+				document.getElementById("one").src="./img/one.JPG";
+			document.getElementById("two").src="./img/one.JPG";
+			document.getElementById("three").src="./img/two.JPG";
+			document.getElementById("four").src="./img/two.JPG";	
+			}
+		}
+	</script>
+	<body>
+		<table>
+			<tr>
+				<td>
+				<img id="one" alt="" src="./img/one.JPG"/>
+				<img id="two" alt="" src="./img/two.JPG"/>
+				<img id="three" alt="" src="./img/three.JPG"/>
+				<img id="four" alt="" src="./img/four.jpg"/>
+			</tr>
+		</table>
+		<div>
+			<button type="button" id="btn" onclick="btn_click();">완료</button>
+		</div>
+	</body>
+</html>
